@@ -10,8 +10,14 @@
     src: url("../fonts/NewsGothicBT-Bold.otf");
 }
 
-body {
-    margin: 0px;
+html, body, ol, ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
 .container-fluid  {
@@ -44,11 +50,23 @@ body {
     color: #7f7f7f;
 }
 
+.color-purple {
+    color: #6e2da3;
+}
+
 .row .column-half:first-child {
     margin-right: 20px;
 }
 
 .row .column-half:last-child {
+    margin-left: 20px;
+}
+
+.row .column-one-third:first-child {
+    margin-right: 20px;
+}
+
+.row .column-two-third:last-child {
     margin-left: 20px;
 }
 
@@ -146,8 +164,8 @@ body {
   }
 
   .date-circle {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     position: relative;
     z-index: 1;
     display: table;
@@ -175,7 +193,32 @@ body {
 
   .date-day {
       display: block;
-      font-size: 48px;
+      font-size: 42px;
       margin-bottom: -6px;
       font-weight: bold;
   }
+
+.circle-section {
+    margin: 0;
+}
+
+.row.circle-section .column-one-third:first-child {
+    margin-right: 5px;
+}
+
+.row.circle-section .column-two-third:last-child {
+    margin-left: 5px;
+}
+
+.circle-section p:first-child {
+    margin-top: 0;
+}
+.circle-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* ===== NEXT PARTY ===== */
+
+.next-party-container h1 {
+    margin-left: 45px;
+}
